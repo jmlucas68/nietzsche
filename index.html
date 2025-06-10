@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,23 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "react/": "https://esm.sh/react@^19.1.0/"
-  }
-}
-</script>
 <link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-gray-100 font-sans">
 
     <!-- Hero Section -->
     <div 
-      class="relative bg-cover bg-center text-white py-20 md:py-32 px-6 shadow-lg" 
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://picsum.photos/seed/nietzschehero/1200/400');"
+      class="relative bg-slate-800 text-white py-20 md:py-32 px-6 shadow-lg"
     >
       <div class="container mx-auto text-center">
         <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-wide">
@@ -58,34 +47,24 @@
             <!-- Biography Section -->
             <section id="biography" class="mb-12 py-8">
                 <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Biografía</h2>
-                <div class="md:flex md:space-x-8 items-start">
-                    <div class="md:w-2/3">
-                        <div class="mb-4 text-sm text-gray-600">
-                            <p><strong>Nacimiento:</strong> 15 de octubre de 1844, Röcken, Prusia</p>
-                            <p><strong>Fallecimiento:</strong> 25 de agosto de 1900, Weimar, Imperio Alemán</p>
-                            <p><strong>Nacionalidad:</strong> Alemán (Prusiano)</p>
-                        </div>
-                        <p class="mb-4 text-gray-700 leading-relaxed">Friedrich Wilhelm Nietzsche fue un filósofo, poeta, músico y filólogo alemán, considerado uno de los pensadores más influyentes del siglo XIX y de la filosofía occidental.</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">Su obra ha ejercido una profunda influencia tanto en la historia intelectual como en la cultura occidental, abarcando temas como la verdad, la moralidad, el lenguaje, la estética, la historia, el nihilismo, el poder y la conciencia.</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">A los 24 años, se convirtió en el catedrático más joven de filología clásica en la Universidad de Basilea. Sin embargo, su salud delicada lo obligó a renunciar en 1879. Pasó la siguiente década de su vida viajando y escribiendo prolíficamente, hasta que en 1889 sufrió un colapso mental del que nunca se recuperó. Pasó sus últimos años bajo el cuidado de su madre y luego de su hermana, Elisabeth Förster-Nietzsche.</p>
+                <div>
+                    <div class="mb-4 text-sm text-gray-600">
+                        <p><strong>Nacimiento:</strong> 15 de octubre de 1844, Röcken, Prusia</p>
+                        <p><strong>Fallecimiento:</strong> 25 de agosto de 1900, Weimar, Imperio Alemán</p>
+                        <p><strong>Nacionalidad:</strong> Alemán (Prusiano)</p>
                     </div>
-                    <div class="md:w-1/3 mt-6 md:mt-0">
-                        <img src="https://picsum.photos/seed/nietzscheportrait/400/500" alt="Friedrich Nietzsche" class="rounded-lg shadow-lg mx-auto" style="max-width: 300px;">
-                    </div>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Friedrich Wilhelm Nietzsche fue un filósofo, poeta, músico y filólogo alemán, considerado uno de los pensadores más influyentes del siglo XIX y de la filosofía occidental.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Su obra ha ejercido una profunda influencia tanto en la historia intelectual como en la cultura occidental, abarcando temas como la verdad, la moralidad, el lenguaje, la estética, la historia, el nihilismo, el poder y la conciencia.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">A los 24 años, se convirtió en el catedrático más joven de filología clásica en la Universidad de Basilea. Sin embargo, su salud delicada lo obligó a renunciar en 1879. Pasó la siguiente década de su vida viajando y escribiendo prolíficamente, hasta que en 1889 sufrió un colapso mental del que nunca se recuperó. Pasó sus últimos años bajo el cuidado de su madre y luego de su hermana, Elisabeth Förster-Nietzsche.</p>
                 </div>
             </section>
 
             <!-- Philosophy Section -->
             <section id="philosophy" class="mb-12 py-8">
                 <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Pensamiento Filosófico</h2>
-                <div class="md:flex md:space-x-8 items-start mb-6">
-                    <div class="md:w-2/3">
-                        <p class="mb-4 text-gray-700 leading-relaxed">La filosofía de Nietzsche es compleja y a menudo provocadora, desafiando las convenciones morales y religiosas de su tiempo. Sus ideas clave giran en torno a la crítica de la moral tradicional, la afirmación de la vida y la superación del nihilismo.</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">Exploró conceptos revolucionarios que siguen siendo debatidos y analizados en la actualidad.</p>
-                    </div>
-                    <div class="md:w-1/3 mt-6 md:mt-0">
-                        <img src="https://picsum.photos/seed/philosophyabstract/600/400" alt="Concepto Filosófico" class="rounded-lg shadow-lg mx-auto" style="max-width: 350px;">
-                    </div>
+                <div class="mb-6">
+                    <p class="mb-4 text-gray-700 leading-relaxed">La filosofía de Nietzsche es compleja y a menudo provocadora, desafiando las convenciones morales y religiosas de su tiempo. Sus ideas clave giran en torno a la crítica de la moral tradicional, la afirmación de la vida y la superación del nihilismo.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Exploró conceptos revolucionarios que siguen siendo debatidos y analizados en la actualidad.</p>
                 </div>
                 <div class="mb-8 p-6 bg-white rounded-xl shadow-lg">
                     <h3 class="text-2xl font-semibold text-blue-700 mb-3">Voluntad de Poder (Wille zur Macht)</h3>
@@ -146,7 +125,6 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
                     <!-- Zaratustra -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
-                        <img src="https://picsum.photos/seed/zaratustra/300/450" alt="Así Habló Zaratustra" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">Así Habló Zaratustra</h3>
                             <p class="text-sm text-gray-500 mb-1">(1883-1885)</p>
@@ -162,7 +140,6 @@
                     </div>
                     <!-- Más Allá del Bien y del Mal -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
-                        <img src="https://picsum.photos/seed/masalla/300/450" alt="Más Allá del Bien y del Mal" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">Más Allá del Bien y del Mal</h3>
                             <p class="text-sm text-gray-500 mb-1">(1886)</p>
@@ -178,7 +155,6 @@
                     </div>
                     <!-- La Genealogía de la Moral -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
-                        <img src="https://picsum.photos/seed/genealogia/300/450" alt="La Genealogía de la Moral" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">La Genealogía de la Moral</h3>
                             <p class="text-sm text-gray-500 mb-1">(1887)</p>
@@ -194,7 +170,6 @@
                     </div>
                     <!-- El Anticristo -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
-                        <img src="https://picsum.photos/seed/anticristo/300/450" alt="El Anticristo" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">El Anticristo</h3>
                             <p class="text-sm text-gray-500 mb-1">(1888, pub. 1895)</p>
@@ -210,7 +185,6 @@
                     </div>
                     <!-- Ecce Homo -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
-                        <img src="https://picsum.photos/seed/eccehomo/300/450" alt="Ecce Homo" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">Ecce Homo</h3>
                             <p class="text-sm text-gray-500 mb-1">(1888, pub. 1908)</p>
@@ -226,7 +200,6 @@
                     </div>
                     <!-- El Nacimiento de la Tragedia -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
-                        <img src="https://picsum.photos/seed/tragedia/300/450" alt="El Nacimiento de la Tragedia" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">El Nacimiento de la Tragedia</h3>
                             <p class="text-sm text-gray-500 mb-1">(1872)</p>
@@ -243,7 +216,6 @@
                     </div>
                     <!-- Humano, Demasiado Humano -->
                      <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
-                        <img src="https://picsum.photos/seed/humano/300/450" alt="Humano, Demasiado Humano" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">Humano, Demasiado Humano</h3>
                             <p class="text-sm text-gray-500 mb-1">(1878-1880)</p>
@@ -263,14 +235,9 @@
             <!-- Influences Received Section -->
             <section id="influencesReceived" class="mb-12 py-8">
                 <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Influencias Recibidas</h2>
-                <div class="md:flex md:space-x-8 items-start mb-6">
-                    <div class="md:w-2/3">
-                        <p class="mb-4 text-gray-700 leading-relaxed">El pensamiento de Nietzsche no surgió en el vacío. Estuvo profundamente influenciado por filósofos anteriores, la cultura griega antigua y figuras contemporáneas.</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">Estas influencias fueron a menudo críticamente asimiladas y transformadas en su propio sistema filosófico.</p>
-                    </div>
-                    <div class="md:w-1/3 mt-6 md:mt-0">
-                        <img src="https://picsum.photos/seed/influencesold/600/400" alt="Influencias Recibidas" class="rounded-lg shadow-lg mx-auto" style="max-width: 350px;">
-                    </div>
+                <div class="mb-6">
+                    <p class="mb-4 text-gray-700 leading-relaxed">El pensamiento de Nietzsche no surgió en el vacío. Estuvo profundamente influenciado por filósofos anteriores, la cultura griega antigua y figuras contemporáneas.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Estas influencias fueron a menudo críticamente asimiladas y transformadas en su propio sistema filosófico.</p>
                 </div>
                 <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
                     <h4 class="text-xl font-semibold text-blue-700 mb-2">Arthur Schopenhauer</h4>
@@ -297,14 +264,9 @@
             <!-- Influence Exerted Section -->
             <section id="influenceExerted" class="mb-12 py-8">
                  <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Influencia Ejercida</h2>
-                <div class="md:flex md:space-x-8 items-start mb-6">
-                    <div class="md:w-2/3">
-                        <p class="mb-4 text-gray-700 leading-relaxed">Pocos filósofos han tenido un impacto tan amplio y duradero como Nietzsche. Su pensamiento ha resonado en campos tan diversos como la filosofía, la literatura, la psicología, el arte y la teoría política.</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">Su obra sigue siendo una fuente de inspiración y controversia.</p>
-                    </div>
-                    <div class="md:w-1/3 mt-6 md:mt-0">
-                        <img src="https://picsum.photos/seed/influencefuture/600/400" alt="Influencia Ejercida" class="rounded-lg shadow-lg mx-auto" style="max-width: 350px;">
-                    </div>
+                <div class="mb-6">
+                    <p class="mb-4 text-gray-700 leading-relaxed">Pocos filósofos han tenido un impacto tan amplio y duradero como Nietzsche. Su pensamiento ha resonado en campos tan diversos como la filosofía, la literatura, la psicología, el arte y la teoría política.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Su obra sigue siendo una fuente de inspiración y controversia.</p>
                 </div>
                 <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
                     <h4 class="text-xl font-semibold text-blue-700 mb-2">Existencialismo</h4>
@@ -331,18 +293,13 @@
             <!-- Context Section -->
             <section id="context" class="mb-12 py-8">
                 <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Contexto Histórico y Filosófico</h2>
-                <div class="md:flex md:space-x-8 items-start mb-6">
-                    <div class="md:w-2/3">
-                        <p class="mb-4 text-gray-700 leading-relaxed">Nietzsche vivió y escribió en una época de profundas transformaciones en Europa: el auge del industrialismo, el nacionalismo, el positivismo científico y una creciente crisis de los valores tradicionales.</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">Su filosofía es, en gran medida, una respuesta a este contexto.</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">El siglo XIX fue testigo del declive de la influencia religiosa y metafísica, y el ascenso de la ciencia como paradigma explicativo dominante (positivismo). Nietzsche criticó tanto la fe dogmática como la fe ciega en la ciencia.</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">Políticamente, fue la era de la unificación alemana bajo Bismarck, el imperialismo europeo y el surgimiento de movimientos sociales como el socialismo y el anarquismo. Nietzsche fue crítico con el nacionalismo y las ideologías de masas.</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">Filosóficamente, el idealismo alemán (Hegel) había entrado en crisis, y surgían corrientes como el materialismo (Marx, Feuerbach) y el vitalismo. Schopenhauer representó una importante corriente pesimista que influyó inicialmente a Nietzsche.</p>
-                        <p class="mb-4 text-gray-700 leading-relaxed">La 'crisis de los valores' o 'nihilismo' que Nietzsche diagnosticó se refería a la pérdida de fundamentos para la moral y el sentido de la vida, una vez que la cosmovisión religiosa judeocristiana perdía su centralidad.</p>
-                    </div>
-                    <div class="md:w-1/3 mt-6 md:mt-0">
-                        <img src="https://picsum.photos/seed/historycontext/600/400" alt="Contexto Histórico" class="rounded-lg shadow-lg mx-auto" style="max-width: 350px;">
-                    </div>
+                <div class="mb-6">
+                    <p class="mb-4 text-gray-700 leading-relaxed">Nietzsche vivió y escribió en una época de profundas transformaciones en Europa: el auge del industrialismo, el nacionalismo, el positivismo científico y una creciente crisis de los valores tradicionales.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Su filosofía es, en gran medida, una respuesta a este contexto.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">El siglo XIX fue testigo del declive de la influencia religiosa y metafísica, y el ascenso de la ciencia como paradigma explicativo dominante (positivismo). Nietzsche criticó tanto la fe dogmática como la fe ciega en la ciencia.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Políticamente, fue la era de la unificación alemana bajo Bismarck, el imperialismo europeo y el surgimiento de movimientos sociales como el socialismo y el anarquismo. Nietzsche fue crítico con el nacionalismo y las ideologías de masas.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Filosóficamente, el idealismo alemán (Hegel) había entrado en crisis, y surgían corrientes como el materialismo (Marx, Feuerbach) y el vitalismo. Schopenhauer representó una importante corriente pesimista que influyó inicialmente a Nietzsche.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">La 'crisis de los valores' o 'nihilismo' que Nietzsche diagnosticó se refería a la pérdida de fundamentos para la moral y el sentido de la vida, una vez que la cosmovisión religiosa judeocristiana perdía su centralidad.</p>
                 </div>
             </section>
 
