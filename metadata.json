@@ -1,5 +1,6 @@
+
 {
-  "name": "Nietzsche: Vida y Obra",
-  "description": "Una aplicación web interactiva que explora la vida, obras, pensamiento e influencias del filósofo Friedrich Nietzsche.",
+  "name": "Nietzsche: Vida y Obra (Static Version)",
+  "description": "Una página web estática que explora la vida, obras, pensamiento e influencias del filósofo Friedrich Nietzsche, construida con HTML, Tailwind CSS y JavaScript.",
   "requestFramePermissions": []
 }

@@ -7,38 +7,415 @@
     <title>Nietzsche: Vida y Obra</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-      /* Custom scrollbar for webkit browsers */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
 <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.1.0/",
     "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
   }
 }
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-<body class="bg-gray-100">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Hero Section -->
+    <div 
+      class="relative bg-cover bg-center text-white py-20 md:py-32 px-6 shadow-lg" 
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://picsum.photos/seed/nietzschehero/1200/400');"
+    >
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-wide">
+          Friedrich Nietzsche
+        </h1>
+        <p class="text-lg md:text-2xl font-light opacity-90">
+          Filósofo de la Voluntad de Poder y el Eterno Retorno
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-1 container mx-auto px-4 py-8">
+        <!-- Navigation -->
+        <aside class="w-1/4 md:w-1/5 lg:w-1/6 sticky top-8 self-start pr-8 hidden md:block">
+          <nav class="bg-white p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-700 mb-4 border-b pb-2">Navegación</h3>
+            <ul>
+              <li class="mb-2"><a href="#biography" class="nav-link text-gray-600 hover:text-blue-600 hover:font-semibold transition-all duration-200 w-full text-left py-1 text-sm">Biografía</a></li>
+              <li class="mb-2"><a href="#philosophy" class="nav-link text-gray-600 hover:text-blue-600 hover:font-semibold transition-all duration-200 w-full text-left py-1 text-sm">Pensamiento</a></li>
+              <li class="mb-2"><a href="#works" class="nav-link text-gray-600 hover:text-blue-600 hover:font-semibold transition-all duration-200 w-full text-left py-1 text-sm">Obras</a></li>
+              <li class="mb-2"><a href="#influencesReceived" class="nav-link text-gray-600 hover:text-blue-600 hover:font-semibold transition-all duration-200 w-full text-left py-1 text-sm">Influencias Recibidas</a></li>
+              <li class="mb-2"><a href="#influenceExerted" class="nav-link text-gray-600 hover:text-blue-600 hover:font-semibold transition-all duration-200 w-full text-left py-1 text-sm">Influencia Ejercida</a></li>
+              <li class="mb-2"><a href="#context" class="nav-link text-gray-600 hover:text-blue-600 hover:font-semibold transition-all duration-200 w-full text-left py-1 text-sm">Contexto</a></li>
+              <li class="mb-2"><a href="#externalLinks" class="nav-link text-gray-600 hover:text-blue-600 hover:font-semibold transition-all duration-200 w-full text-left py-1 text-sm">Enlaces Externos</a></li>
+            </ul>
+          </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="w-full md:w-3/4 lg:w-5/6 md:pl-8">
+            <!-- Biography Section -->
+            <section id="biography" class="mb-12 py-8">
+                <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Biografía</h2>
+                <div class="md:flex md:space-x-8 items-start">
+                    <div class="md:w-2/3">
+                        <div class="mb-4 text-sm text-gray-600">
+                            <p><strong>Nacimiento:</strong> 15 de octubre de 1844, Röcken, Prusia</p>
+                            <p><strong>Fallecimiento:</strong> 25 de agosto de 1900, Weimar, Imperio Alemán</p>
+                            <p><strong>Nacionalidad:</strong> Alemán (Prusiano)</p>
+                        </div>
+                        <p class="mb-4 text-gray-700 leading-relaxed">Friedrich Wilhelm Nietzsche fue un filósofo, poeta, músico y filólogo alemán, considerado uno de los pensadores más influyentes del siglo XIX y de la filosofía occidental.</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">Su obra ha ejercido una profunda influencia tanto en la historia intelectual como en la cultura occidental, abarcando temas como la verdad, la moralidad, el lenguaje, la estética, la historia, el nihilismo, el poder y la conciencia.</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">A los 24 años, se convirtió en el catedrático más joven de filología clásica en la Universidad de Basilea. Sin embargo, su salud delicada lo obligó a renunciar en 1879. Pasó la siguiente década de su vida viajando y escribiendo prolíficamente, hasta que en 1889 sufrió un colapso mental del que nunca se recuperó. Pasó sus últimos años bajo el cuidado de su madre y luego de su hermana, Elisabeth Förster-Nietzsche.</p>
+                    </div>
+                    <div class="md:w-1/3 mt-6 md:mt-0">
+                        <img src="https://picsum.photos/seed/nietzscheportrait/400/500" alt="Friedrich Nietzsche" class="rounded-lg shadow-lg mx-auto" style="max-width: 300px;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Philosophy Section -->
+            <section id="philosophy" class="mb-12 py-8">
+                <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Pensamiento Filosófico</h2>
+                <div class="md:flex md:space-x-8 items-start mb-6">
+                    <div class="md:w-2/3">
+                        <p class="mb-4 text-gray-700 leading-relaxed">La filosofía de Nietzsche es compleja y a menudo provocadora, desafiando las convenciones morales y religiosas de su tiempo. Sus ideas clave giran en torno a la crítica de la moral tradicional, la afirmación de la vida y la superación del nihilismo.</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">Exploró conceptos revolucionarios que siguen siendo debatidos y analizados en la actualidad.</p>
+                    </div>
+                    <div class="md:w-1/3 mt-6 md:mt-0">
+                        <img src="https://picsum.photos/seed/philosophyabstract/600/400" alt="Concepto Filosófico" class="rounded-lg shadow-lg mx-auto" style="max-width: 350px;">
+                    </div>
+                </div>
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Voluntad de Poder (Wille zur Macht)</h3>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Concepto central en la filosofía tardía de Nietzsche. No se refiere simplemente al poder sobre otros, sino a una fuerza fundamental e impulsora presente en todos los seres vivos, una pulsión hacia el crecimiento, la superación, la autoafirmación y la creatividad.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Es la dinámica esencial de la existencia, la afirmación de la vida en su máxima expresión.</p>
+                    <blockquote class="my-4 p-4 border-l-4 border-blue-500 bg-blue-50 italic rounded-r-md">
+                        <p class="text-gray-700 leading-relaxed">"Este mundo es la voluntad de poder, y nada más que eso. Y vosotros mismos sois también esta voluntad de poder, y nada más que eso."</p>
+                        <footer class="mt-2 text-sm text-gray-600 text-right">- Fragmentos Póstumos</footer>
+                    </blockquote>
+                </div>
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Eterno Retorno (Ewige Wiederkunft)</h3>
+                    <p class="mb-4 text-gray-700 leading-relaxed">La idea de que todos los eventos del universo se repetirán exactamente de la misma manera, en un ciclo infinito. Nietzsche lo presenta como la prueba definitiva de la afirmación de la vida: ¿amarías tanto tu vida como para desear vivirla una y otra vez, eternamente?</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Es un pensamiento abismal que busca transformar la perspectiva sobre cada instante de la existencia.</p>
+                     <blockquote class="my-4 p-4 border-l-4 border-blue-500 bg-blue-50 italic rounded-r-md">
+                        <p class="text-gray-700 leading-relaxed">"¿Y si un día o una noche un demonio se deslizara furtivamente en tu más solitaria soledad y te dijese: 'Esta vida, como la vives ahora y la has vivido, deberás vivirla aún otra vez e innumerables veces...'?"</p>
+                        <footer class="mt-2 text-sm text-gray-600 text-right">- La Gaya Ciencia, §341</footer>
+                    </blockquote>
+                </div>
+                 <div class="mb-8 p-6 bg-white rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Superhombre (Übermensch)</h3>
+                    <p class="mb-4 text-gray-700 leading-relaxed">El ideal de un ser humano que ha superado la moral tradicional ('moral de esclavos') y ha creado sus propios valores. El Superhombre es aquel que abraza el eterno retorno y vive afirmativamente, creando sentido en un mundo sin Dios.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">No es una figura racial ni biológica, sino un objetivo espiritual y existencial.</p>
+                     <blockquote class="my-4 p-4 border-l-4 border-blue-500 bg-blue-50 italic rounded-r-md">
+                        <p class="text-gray-700 leading-relaxed">"El hombre es una cuerda tendida entre el animal y el superhombre; una cuerda sobre un abismo."</p>
+                        <footer class="mt-2 text-sm text-gray-600 text-right">- Así Habló Zaratustra</footer>
+                    </blockquote>
+                    <blockquote class="my-4 p-4 border-l-4 border-blue-500 bg-blue-50 italic rounded-r-md">
+                        <p class="text-gray-700 leading-relaxed">"Yo os enseño el superhombre. El hombre es algo que debe ser superado."</p>
+                        <footer class="mt-2 text-sm text-gray-600 text-right">- Así Habló Zaratustra</footer>
+                    </blockquote>
+                </div>
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Muerte de Dios (Gott ist tot)</h3>
+                    <p class="mb-4 text-gray-700 leading-relaxed">No una declaración literal, sino una metáfora para describir la pérdida de la fe en Dios y en los valores absolutos que la religión proporcionaba en la cultura occidental. Esta 'muerte' abre un vacío (nihilismo) pero también la posibilidad de crear nuevos valores.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Es un diagnóstico cultural y una llamada a la responsabilidad humana.</p>
+                     <blockquote class="my-4 p-4 border-l-4 border-blue-500 bg-blue-50 italic rounded-r-md">
+                        <p class="text-gray-700 leading-relaxed">"Dios ha muerto. Dios sigue muerto. Y nosotros lo hemos matado. ¿Cómo hemos podido hacerlo?"</p>
+                        <footer class="mt-2 text-sm text-gray-600 text-right">- La Gaya Ciencia, §125</footer>
+                    </blockquote>
+                </div>
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Nihilismo</h3>
+                    <p class="mb-4 text-gray-700 leading-relaxed">La consecuencia de la 'muerte de Dios': la creencia de que la vida carece de significado, propósito o valor intrínseco. Nietzsche vio el nihilismo como un peligro, pero también como una etapa transitoria hacia la revalorización de todos los valores y la creación de un nuevo sentido.</p>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Distinguió entre nihilismo pasivo (resignación) y activo (destrucción para crear).</p>
+                     <blockquote class="my-4 p-4 border-l-4 border-blue-500 bg-blue-50 italic rounded-r-md">
+                        <p class="text-gray-700 leading-relaxed">"Nihilista es el hombre que juzga que el mundo, tal como es, no debería existir, y que el mundo, tal como debería ser, no existe."</p>
+                        <footer class="mt-2 text-sm text-gray-600 text-right">- Fragmentos Póstumos</footer>
+                    </blockquote>
+                </div>
+            </section>
+
+            <!-- Works Section -->
+            <section id="works" class="mb-12 py-8">
+                <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Obras Principales</h2>
+                <p class="mb-4 text-gray-700 leading-relaxed">La producción literaria de Nietzsche es vasta y diversa, abarcando desde tratados filosóficos hasta aforismos y poesía. Sus obras son conocidas por su estilo apasionado y a menudo polémico.</p>
+                <p class="mb-4 text-gray-700 leading-relaxed">A continuación, se presentan algunas de sus obras más influyentes con enlaces a versiones digitales gratuitas (cuando disponibles en español) o a ediciones en Amazon.es.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+                    <!-- Zaratustra -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://picsum.photos/seed/zaratustra/300/450" alt="Así Habló Zaratustra" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Así Habló Zaratustra</h3>
+                            <p class="text-sm text-gray-500 mb-1">(1883-1885)</p>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow">Obra central, presenta muchas de sus ideas clave como el Superhombre y el Eterno Retorno a través de la figura profética de Zaratustra.</p>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2">Enlaces:</h4>
+                                <ul class="space-y-2">
+                                    <li><a href="https://es.wikisource.org/wiki/As%C3%AD_habl%C3%B3_Zaratustra" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-blue-100 text-blue-700"><i class="fas fa-book-open mr-2"></i>Wikisource</a></li>
+                                    <li><a href="https://www.amazon.es/dp/8420674514" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-yellow-100 text-yellow-700"><i class="fab fa-amazon mr-2"></i>Amazon.es</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Más Allá del Bien y del Mal -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://picsum.photos/seed/masalla/300/450" alt="Más Allá del Bien y del Mal" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Más Allá del Bien y del Mal</h3>
+                            <p class="text-sm text-gray-500 mb-1">(1886)</p>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow">Una crítica de la moral tradicional y una 'preludio a una filosofía del futuro', explorando la 'voluntad de verdad' y el perspectivismo.</p>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2">Enlaces:</h4>
+                                <ul class="space-y-2">
+                                    <li><a href="https://es.wikisource.org/wiki/M%C3%A1s_all%C3%A1_del_bien_y_del_mal" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-blue-100 text-blue-700"><i class="fas fa-book-open mr-2"></i>Wikisource</a></li>
+                                    <li><a href="https://www.amazon.es/dp/8420678943" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-yellow-100 text-yellow-700"><i class="fab fa-amazon mr-2"></i>Amazon.es</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- La Genealogía de la Moral -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://picsum.photos/seed/genealogia/300/450" alt="La Genealogía de la Moral" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">La Genealogía de la Moral</h3>
+                            <p class="text-sm text-gray-500 mb-1">(1887)</p>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow">Investiga los orígenes y la evolución de los conceptos morales, distinguiendo entre 'moral de señores' y 'moral de esclavos'.</p>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2">Enlaces:</h4>
+                                <ul class="space-y-2">
+                                    <li><a href="https://es.wikisource.org/wiki/La_genealog%C3%ADa_de_la_moral" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-blue-100 text-blue-700"><i class="fas fa-book-open mr-2"></i>Wikisource</a></li>
+                                    <li><a href="https://www.amazon.es/dp/842067221X" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-yellow-100 text-yellow-700"><i class="fab fa-amazon mr-2"></i>Amazon.es</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- El Anticristo -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://picsum.photos/seed/anticristo/300/450" alt="El Anticristo" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">El Anticristo</h3>
+                            <p class="text-sm text-gray-500 mb-1">(1888, pub. 1895)</p>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow">Una crítica feroz al cristianismo, al que considera una religión nihilista y contraria a los instintos vitales.</p>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2">Enlaces:</h4>
+                                <ul class="space-y-2">
+                                    <li><a href="https://es.wikisource.org/wiki/El_Anticristo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-blue-100 text-blue-700"><i class="fas fa-book-open mr-2"></i>Wikisource</a></li>
+                                    <li><a href="https://www.amazon.es/dp/8420672201" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-yellow-100 text-yellow-700"><i class="fab fa-amazon mr-2"></i>Amazon.es</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ecce Homo -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://picsum.photos/seed/eccehomo/300/450" alt="Ecce Homo" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Ecce Homo</h3>
+                            <p class="text-sm text-gray-500 mb-1">(1888, pub. 1908)</p>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow">Autobiografía intelectual donde Nietzsche revisa sus obras y su vida, con títulos de capítulos provocadores como 'Por qué soy tan sabio'.</p>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2">Enlaces:</h4>
+                                <ul class="space-y-2">
+                                    <li><a href="https://es.wikisource.org/wiki/Ecce_Homo_(Nietzsche)" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-blue-100 text-blue-700"><i class="fas fa-book-open mr-2"></i>Wikisource</a></li>
+                                    <li><a href="https://www.amazon.es/dp/8420679001" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-yellow-100 text-yellow-700"><i class="fab fa-amazon mr-2"></i>Amazon.es</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- El Nacimiento de la Tragedia -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://picsum.photos/seed/tragedia/300/450" alt="El Nacimiento de la Tragedia" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">El Nacimiento de la Tragedia</h3>
+                            <p class="text-sm text-gray-500 mb-1">(1872)</p>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow">Su primera obra importante, analiza la tragedia griega a través de los conceptos de lo apolíneo y lo dionisíaco.</p>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2">Enlaces:</h4>
+                                <ul class="space-y-2">
+                                    <li><a href="https://www.gutenberg.org/ebooks/53099" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-green-100 text-green-700"><i class="fas fa-book mr-2"></i>Gutenberg</a></li>
+                                    <li><a href="https://es.wikisource.org/wiki/El_nacimiento_de_la_tragedia_en_el_esp%C3%ADritu_de_la_m%C3%BAsica" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-blue-100 text-blue-700"><i class="fas fa-book-open mr-2"></i>Wikisource</a></li>
+                                    <li><a href="https://www.amazon.es/dp/842067171X" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-yellow-100 text-yellow-700"><i class="fab fa-amazon mr-2"></i>Amazon.es</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Humano, Demasiado Humano -->
+                     <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://picsum.photos/seed/humano/300/450" alt="Humano, Demasiado Humano" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Humano, Demasiado Humano</h3>
+                            <p class="text-sm text-gray-500 mb-1">(1878-1880)</p>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow">Marca un giro en su pensamiento, adoptando un estilo aforístico y una perspectiva más científica y escéptica.</p>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2">Enlaces:</h4>
+                                <ul class="space-y-2">
+                                     <li><a href="https://es.wikisource.org/wiki/Humano,_demasiado_humano" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-blue-100 text-blue-700"><i class="fas fa-book-open mr-2"></i>Wikisource</a></li>
+                                    <li><a href="https://www.amazon.es/dp/8446046757" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium px-3 py-1 rounded-full hover:opacity-80 transition-opacity bg-yellow-100 text-yellow-700"><i class="fab fa-amazon mr-2"></i>Amazon.es</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Influences Received Section -->
+            <section id="influencesReceived" class="mb-12 py-8">
+                <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Influencias Recibidas</h2>
+                <div class="md:flex md:space-x-8 items-start mb-6">
+                    <div class="md:w-2/3">
+                        <p class="mb-4 text-gray-700 leading-relaxed">El pensamiento de Nietzsche no surgió en el vacío. Estuvo profundamente influenciado por filósofos anteriores, la cultura griega antigua y figuras contemporáneas.</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">Estas influencias fueron a menudo críticamente asimiladas y transformadas en su propio sistema filosófico.</p>
+                    </div>
+                    <div class="md:w-1/3 mt-6 md:mt-0">
+                        <img src="https://picsum.photos/seed/influencesold/600/400" alt="Influencias Recibidas" class="rounded-lg shadow-lg mx-auto" style="max-width: 350px;">
+                    </div>
+                </div>
+                <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Arthur Schopenhauer</h4>
+                    <p class="mb-4 text-gray-700 leading-relaxed">La idea de la 'voluntad' de Schopenhauer fue un punto de partida crucial para Nietzsche, aunque luego la transformó en su 'voluntad de poder'. Inicialmente, Nietzsche fue un ferviente admirador de Schopenhauer.</p>
+                </div>
+                <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Immanuel Kant</h4>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Nietzsche se enfrentó críticamente a la filosofía de Kant, especialmente a su 'imperativo categórico' y la noción de 'cosa en sí'. La crítica nietzscheana a la metafísica tiene raíces en el debate postkantiano.</p>
+                </div>
+                <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Filosofía Griega Antigua</h4>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Especialmente los presocráticos como Heráclito (con su idea del devenir constante) y la tragedia griega (concepto de lo dionisíaco y apolíneo). Valoraba el espíritu agonístico y afirmativo de la vida de los griegos.</p>
+                </div>
+                <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Richard Wagner</h4>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Al principio, Nietzsche vio en Wagner y su música la promesa de un renacimiento cultural. Sin embargo, más tarde rompió con él, criticando su nacionalismo y su conversión al cristianismo (Parsifal).</p>
+                </div>
+                 <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Baruch Spinoza</h4>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Aunque no siempre explícito, hay paralelismos en la afirmación de la vida, la crítica a la teleología y la idea del 'conatus' (esfuerzo por perseverar en el ser) de Spinoza con la voluntad de poder nietzscheana.</p>
+                </div>
+            </section>
+
+            <!-- Influence Exerted Section -->
+            <section id="influenceExerted" class="mb-12 py-8">
+                 <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Influencia Ejercida</h2>
+                <div class="md:flex md:space-x-8 items-start mb-6">
+                    <div class="md:w-2/3">
+                        <p class="mb-4 text-gray-700 leading-relaxed">Pocos filósofos han tenido un impacto tan amplio y duradero como Nietzsche. Su pensamiento ha resonado en campos tan diversos como la filosofía, la literatura, la psicología, el arte y la teoría política.</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">Su obra sigue siendo una fuente de inspiración y controversia.</p>
+                    </div>
+                    <div class="md:w-1/3 mt-6 md:mt-0">
+                        <img src="https://picsum.photos/seed/influencefuture/600/400" alt="Influencia Ejercida" class="rounded-lg shadow-lg mx-auto" style="max-width: 350px;">
+                    </div>
+                </div>
+                <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Existencialismo</h4>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Pensadores como Jean-Paul Sartre, Albert Camus y Martin Heidegger encontraron en Nietzsche ideas fundamentales sobre la libertad, la responsabilidad individual, la ausencia de un sentido predefinido y la creación de valores.</p>
+                </div>
+                <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Postestructuralismo y Postmodernismo</h4>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Autores como Michel Foucault (genealogía del poder), Jacques Derrida (deconstrucción) y Gilles Deleuze se inspiraron en su crítica del sujeto, la verdad y el lenguaje.</p>
+                </div>
+                <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Psicología</h4>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Aunque con interpretaciones diversas, Sigmund Freud reconoció la agudeza psicológica de Nietzsche. Carl Jung también tomó conceptos nietzscheanos. Su exploración de los instintos y lo irracional fue precursora.</p>
+                </div>
+                <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Literatura y Arte</h4>
+                    <p class="mb-4 text-gray-700 leading-relaxed">Numerosos escritores (André Gide, Thomas Mann, Hermann Hesse, Yeats) y artistas se sintieron atraídos por su vitalismo, su crítica cultural y su estilo poético.</p>
+                </div>
+                 <div class="mb-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-r-lg">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Teoría Crítica</h4>
+                    <p class="mb-4 text-gray-700 leading-relaxed">La Escuela de Frankfurt y otros teóricos críticos han dialogado con las ideas de Nietzsche sobre el poder, la ideología y la crítica de la modernidad.</p>
+                </div>
+            </section>
+
+            <!-- Context Section -->
+            <section id="context" class="mb-12 py-8">
+                <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Contexto Histórico y Filosófico</h2>
+                <div class="md:flex md:space-x-8 items-start mb-6">
+                    <div class="md:w-2/3">
+                        <p class="mb-4 text-gray-700 leading-relaxed">Nietzsche vivió y escribió en una época de profundas transformaciones en Europa: el auge del industrialismo, el nacionalismo, el positivismo científico y una creciente crisis de los valores tradicionales.</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">Su filosofía es, en gran medida, una respuesta a este contexto.</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">El siglo XIX fue testigo del declive de la influencia religiosa y metafísica, y el ascenso de la ciencia como paradigma explicativo dominante (positivismo). Nietzsche criticó tanto la fe dogmática como la fe ciega en la ciencia.</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">Políticamente, fue la era de la unificación alemana bajo Bismarck, el imperialismo europeo y el surgimiento de movimientos sociales como el socialismo y el anarquismo. Nietzsche fue crítico con el nacionalismo y las ideologías de masas.</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">Filosóficamente, el idealismo alemán (Hegel) había entrado en crisis, y surgían corrientes como el materialismo (Marx, Feuerbach) y el vitalismo. Schopenhauer representó una importante corriente pesimista que influyó inicialmente a Nietzsche.</p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">La 'crisis de los valores' o 'nihilismo' que Nietzsche diagnosticó se refería a la pérdida de fundamentos para la moral y el sentido de la vida, una vez que la cosmovisión religiosa judeocristiana perdía su centralidad.</p>
+                    </div>
+                    <div class="md:w-1/3 mt-6 md:mt-0">
+                        <img src="https://picsum.photos/seed/historycontext/600/400" alt="Contexto Histórico" class="rounded-lg shadow-lg mx-auto" style="max-width: 350px;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- External Links Section -->
+            <section id="externalLinks" class="mb-12 py-8">
+                 <h2 class="text-4xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-8">Enlaces Externos y Fuentes</h2>
+                <ul class="space-y-3">
+                    <li class="p-3 bg-gray-50 hover:bg-gray-200 rounded-md transition-colors duration-200">
+                        <a href="https://plato.stanford.edu/entries/nietzsche/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">
+                            <i class="fas fa-external-link-alt mr-2"></i>Nietzsche en la Stanford Encyclopedia of Philosophy (Inglés)
+                            <span class="ml-2 text-xs uppercase px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full">fuente secundaria</span>
+                        </a>
+                    </li>
+                    <li class="p-3 bg-gray-50 hover:bg-gray-200 rounded-md transition-colors duration-200">
+                        <a href="https://iep.utm.edu/nietzsch/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">
+                            <i class="fas fa-external-link-alt mr-2"></i>Nietzsche en la Internet Encyclopedia of Philosophy (Inglés)
+                            <span class="ml-2 text-xs uppercase px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full">fuente secundaria</span>
+                        </a>
+                    </li>
+                    <li class="p-3 bg-gray-50 hover:bg-gray-200 rounded-md transition-colors duration-200">
+                        <a href="https://es.wikisource.org/wiki/Autor:Friedrich_Nietzsche" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">
+                            <i class="fas fa-external-link-alt mr-2"></i>Obras de Nietzsche en Wikisource (Español)
+                            <span class="ml-2 text-xs uppercase px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full">fuente primaria</span>
+                        </a>
+                    </li>
+                     <li class="p-3 bg-gray-50 hover:bg-gray-200 rounded-md transition-colors duration-200">
+                        <a href="https://www.gutenberg.org/ebooks/search/?query=nietzsche&lang=es" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">
+                            <i class="fas fa-external-link-alt mr-2"></i>Obras de Nietzsche en Proyecto Gutenberg (Español)
+                            <span class="ml-2 text-xs uppercase px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full">fuente primaria</span>
+                        </a>
+                    </li>
+                    <li class="p-3 bg-gray-50 hover:bg-gray-200 rounded-md transition-colors duration-200">
+                        <a href="https://www.academia.edu/36531339/La_actualidad_del_pensamiento_de_Nietzsche" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">
+                            <i class="fas fa-external-link-alt mr-2"></i>Artículo: 'La actualidad del pensamiento de Nietzsche' en Academia.edu
+                            <span class="ml-2 text-xs uppercase px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full">academia</span>
+                        </a>
+                    </li>
+                     <li class="p-3 bg-gray-50 hover:bg-gray-200 rounded-md transition-colors duration-200">
+                        <a href="https://www.academia.edu/5678130/Nietzsche_y_la_muerte_de_Dios_Implicaciones_filos%C3%B3ficas_y_culturales" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">
+                            <i class="fas fa-external-link-alt mr-2"></i>Artículo: 'Nietzsche y la muerte de Dios: Implicaciones filosóficas y culturales' en Academia.edu
+                            <span class="ml-2 text-xs uppercase px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full">academia</span>
+                        </a>
+                    </li>
+                    <li class="p-3 bg-gray-50 hover:bg-gray-200 rounded-md transition-colors duration-200">
+                        <a href="https://www.academia.edu/Documents/in/Nietzsche" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">
+                            <i class="fas fa-external-link-alt mr-2"></i>Buscar más artículos sobre Nietzsche en Academia.edu
+                            <span class="ml-2 text-xs uppercase px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full">academia</span>
+                        </a>
+                    </li>
+                    <li class="p-3 bg-gray-50 hover:bg-gray-200 rounded-md transition-colors duration-200">
+                        <a href="http://www.nietzschesociety.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">
+                            <i class="fas fa-external-link-alt mr-2"></i>The Nietzsche Society (Inglés)
+                            <span class="ml-2 text-xs uppercase px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full">lectura adicional</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+      <div class="container mx-auto">
+        <p class="text-sm">
+          &copy; <span id="currentYear"></span> Explorador Filosófico de Nietzsche. Todos los derechos (conceptuales) reservados.
+        </p>
+        <p class="text-xs mt-2 opacity-75">
+          Creado con <i class="fas fa-heart text-red-500"></i> y HTML + Tailwind CSS + JS.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>
